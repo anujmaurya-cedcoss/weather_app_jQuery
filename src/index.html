@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <!-- wrapper class -->
+    <div class="wrapper col-8">
+      <!-- input city name -->
+      <div class="form-group mb-2">
+        <input
+          type="text"
+          class="form form-control"
+          id="city"
+          placeholder="enter city name"
+        />
+      </div>
+      <button class="btn btn-primary mb-2 float-right" id="submit">Show Weather</button>
+
+      <!-- display weather -->
+      <section class="vh-100" style="background-color: #4b515d">
+        <div class="container py-5 h-100">
+          <div
+            class="row d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="col-md-8 col-lg-6 col-xl-4">
+              <div class="card" style="color: #4b515d; border-radius: 35px">
+                <div class="card-body p-4">
+                  <div class="d-flex">
+                    <h6 class="flex-grow-1" id="weather-location">Warsaw</h6>
+                    <h6 id="weather-time">15:07</h6>
+                  </div>
+
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <h6
+                      id="weather-temperature"
+                      class="display-4 mb-0 font-weight-bold"
+                      style="color: #1c2331"
+                    >
+                      13°C
+                    </h6>
+                    <span class="small" id="weather-text" style="color: #868b94"
+                      >Stormy</span
+                    >
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">
+                      <div>
+                        <i class="fas fa-wind fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1" id="weather-wind"> 40 km/h </span>
+                      </div>
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1" id="weather-humidity"> 84% </span>
+                      </div>
+                    </div>
+                    <div>
+                      <img
+                        id="weather-image"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="100px"
+                        alt="weather"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./JS/script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>

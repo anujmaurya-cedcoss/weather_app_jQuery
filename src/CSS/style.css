@@ -1,0 +1,15 @@
+.wrapper {
+    margin: auto;
+    margin-top: 30px;
+}
+
+.wrapper__heading {
+    text-align: center;
+}
+input {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+button {
+    margin : 15px;
+}
